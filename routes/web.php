@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,3 +79,14 @@ Route::redirect('/admin/web', '/admin/color');
 Route::get('/color/{hex}', function ($hex){
     return $hex;
 }) -> where('hex', '[0-9a-fA-F]{6}+');
+
+Route::get('my-route', [TestController::class, 'lessonOne']);
+Route::get('data', [TestController::class, 'lessonTow']);
+Route::get('Task1',[TestController::class, 'Task1']);
+Route::get('Task2',[TestController::class, 'Task2']);
+Route::get('Task3',[TestController::class, 'Task3']);
+Route::get('Task4',[TestController::class, 'Task4']);
+Route::get('Task5',[TestController::class, 'Task5']);
+Route::get('Task6',[TestController::class, 'Task6']);
+Route::get('template/{detach}', [TestController::class, 'lessonTemplateOne']);
+
