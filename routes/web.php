@@ -90,3 +90,9 @@ Route::get('Task5',[TestController::class, 'Task5']);
 Route::get('Task6',[TestController::class, 'Task6']);
 Route::get('template/{detach}', [TestController::class, 'lessonTemplateOne']);
 
+Route::get('ConfidentialityOne', [TestController::class, 'ConfidentialityTemplateOne']);
+Route::get('ConfidentialityTwo', [TestController::class, 'ConfidentialityTemplateTwo']);
+Route::get('favouriteString', [TestController::class, 'favouriteStringTemplate']);
+Route::get('arrayList1', [TestController::class, 'ArrayListTemplate1']);
+Route::get('arrayList2', [TestController::class, 'ArrayListTemplate2']);
+Route::get('arrayNumbers', [TestController::class, 'arrayNumbersTemplate']);
